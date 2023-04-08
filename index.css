@@ -72,6 +72,8 @@ section{
 
 
 .main{
+    width: 100% !important;
+    min-height: 100vh !important;
     flex-direction: column;
     padding: 1rem;
 }
