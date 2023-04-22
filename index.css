@@ -43,7 +43,7 @@ header ul li a:hover{
     background: #fff;
     color: #000;
 }
-@media and screen (max-width:422px){
+@media screen and (max-width:422px){
     header ul li a{
     font-size: 12px;
     }
