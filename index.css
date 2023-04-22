@@ -43,6 +43,15 @@ header ul li a:hover{
     background: #fff;
     color: #000;
 }
+@media and screen (max-width:422px){
+    header ul li a{
+    font-size: 12px;
+    }
+    .main .container .description p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
 section{
     width: 100%;
     min-height: 100vh;
