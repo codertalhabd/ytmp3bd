@@ -16,6 +16,9 @@ header{
     border-bottom: 1px solid #fff;
 }
 header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80px;
 }
 header .logo img{
@@ -43,18 +46,39 @@ header ul li a:hover{
     background: #fff;
     color: #000;
 }
-@media screen and (max-width:422px){
-    header ul li a{
-    font-size: 16px;
-    }
-    .main .container .description p{
-        font-size: 14px;
-        font-weight: 300;
+
+/* Loader */
+
+.loader{
+    width: 100% !important;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    background: #fff;
+    position: fixed;
+    z-index: 9999;
+}
+.loader .circle{
+    width: 80px;
+    height: 80px;
+    /* background: #8360c3; */
+    border: 5px solid #8360c3;
+    border-top-color: #fff;
+    border-radius: 50px;
+    animation: load .7s linear infinite;
+}
+@keyframes load{
+    100%{
+        transform: rotate(360deg);
     }
 }
+/* Main */
+
 section{
-    width: 100%;
-    min-height: 100vh;
+    width: 100% !important;
+    min-height: 100vh !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,10 +105,8 @@ section{
 
 
 .main{
-    width: 100% !important;
-    min-height: 100vh !important;
     flex-direction: column;
-    padding: 1rem;
+    padding: 5rem;
 }
 
 .main .container{
