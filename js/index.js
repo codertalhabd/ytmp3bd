@@ -1,3 +1,7 @@
+window.addEventListener('load',() =>{
+  document.getElementById('loader').style.display='none';
+});
+
 const Toast = Swal.mixin({
     toast: true,
     position: 'top-end',
@@ -8,4 +12,5 @@ const Toast = Swal.mixin({
       toast.addEventListener('mouseenter', Swal.stopTimer)
       toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
-  })
+  });
+
